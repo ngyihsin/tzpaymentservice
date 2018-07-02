@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <meta name="theme-color" content="transparent">
+    <title>Blank</title>
+    <meta name="defaultLanguage" content="en-US">
+    <meta name="availableLanguages" content="en-US, zh-TW">
+    <script defer src="script/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/style.css" >
+  </head>
+  <body class="theme-productivity">
+    <h5>tz payment service sample app</h4>
+
+    <form>
+      Select invoke case:
+      <select class="navigable" id="selectedCase">
+        <option value="PinRegistration">PinRegistration</option>
+        <option value="PinChange">PinChange</option>
+        <option value="SecureIndicatorUpdate">SecureIndicatorUpdate</option>
+        <option value="InitiatePayment">InitiatePayment</option>
+        <option value="ReceivePayment">ReceivePayment</option>
+      </select>
+    </form>
+
+    <button width="60" height="100" class="navigable" id="invoke_button">Invoke</button>
+    <div>
+    Invoke Result:
+      <div style="color:#FF0000" id="invoke_result"></div>
+    </div>
+
+    <button width="60" height="100" class="navigable" id="abort_button">Abort</button>
+    <div>
+    Abort Result:
+      <div style="color:#FF0000" id="abort_result"></div>
+    </div>
+
+    <button width="60" height="100" class="navigable" id="close_button">Close</button>
+
+    <div>
+    Close Result:
+      <div style="color:#FF0000" id="close_result"></div>
+    </div>
+
+<!--
+    <div>
+      <div>Payment service available</div>
+      <button width="60" height="100" class="navigable" id="isAvailable-button">isAvailable</button>
+    </div>
+    <div style="color:#FF0000" id="isAvailable_result"></div>
+
+
+    <div>
+      <div>Invoke all use cases</div>
+      <button width="60" height="100" class="navigable" id="all-button">all-use-cases</button>
+    </div>
+    <div style="color:#FF0000" id="all_result"></div>
+//-->
+    <button width="60" height="100" class="navigable" id="clear_button">clear test result</button>
+
+  </body>
+</html>

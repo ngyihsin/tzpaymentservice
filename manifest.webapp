@@ -1,0 +1,41 @@
+  {
+  "name": "TZ Payment service API Test",
+  "description": "TEE Reader APIs test",
+  "launch_path": "/index.html",
+  "type": "certified",
+  "default_locale": "en-US",
+  "locales": {
+    "en-US": {
+      "name": "TEEReader test",
+      "description": "TEE Reader APIs test"
+    },
+    "fr-CA": {
+      "name": "TEEReader test",
+      "description": "TEE Reader APIs test"
+    },
+    "es-US": {
+      "name": "TEEReader test",
+      "description": "TEE Reader APIs test"
+    },
+    "zh-TW": {
+      "name": "TEEReader test",
+      "description": "TEE Reader APIs test"
+    }
+  },
+  "icons": {
+    "56": "/style/icons/Default.png"
+  },
+  "chrome": {
+    "statusbar": "overlap"
+  },
+  "orientation": "default",
+  "activities": {},
+  "permissions": {
+    "secureelement-manage": {},
+    "device-storage:sdcard":{ "access": "readwrite" },
+    "settings":{ "access": "readwrite" },
+    "nfc":{},
+    "nfc-manager": {},
+    "teereader-manage": {}
+  }
+}
